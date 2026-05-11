@@ -1,6 +1,6 @@
 # Ex.No: 3  Basic movements in Unity 
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 11-05-2026                                                                      
+### REGISTER NUMBER : 212223240064
 ### AIM: 
  To learn the basic movements translation,scaling and rotation of game objects through code.
 ### Procedure:
@@ -18,15 +18,16 @@
 ### Program 
 ```
 using UnityEngine;
-public class TransformOperations : MonoBehaviour
+
+public class simple : MonoBehaviour
 {
     public Transform object1; // Object for translation
     public Transform object2; // Object for rotation
     public Transform object3; // Object for scaling
 
-    public float moveSpeed = 2f;  // Speed of translation
-    public float rotateSpeed = 50f; // Speed of rotation
-    public float scaleSpeed = 0.5f; // Speed of scaling
+    // public float moveSpeed = 2f;  // Speed of translation
+    //public float rotateSpeed = 50f; // Speed of rotation
+    //public float scaleSpeed = 0.5f; // Speed of scaling
 
     void Update()
     {
@@ -42,7 +43,7 @@ public class TransformOperations : MonoBehaviour
         if (object2 != null)
         {
             //object2.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
-            //object2.Rotate(0,0.02f.0);
+            object2.Rotate(0,30f*Time.deltaTime,0);
         }
 
         // Scale object3 up and down
@@ -50,13 +51,15 @@ public class TransformOperations : MonoBehaviour
         {
            // float scaleChange = Mathf.PingPong(Time.time * scaleSpeed, 1f) + 0.5f; // generates a value that moves back and forth between 0 and length
            // object3.localScale = new Vector3(scaleChange, scaleChange, scaleChange);
-            object3.localScale+=new Vector3(0.02f.0.02f,0);
+            object3.localScale+=new Vector3(2f,2f,2f);
 
         }
     }
 }
+
 ```
 ### Output:
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/ae574a50-465a-4879-acd4-af8d3498e12c" />
 
 
 

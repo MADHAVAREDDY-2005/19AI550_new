@@ -61,7 +61,8 @@ public class simple : MonoBehaviour
 ### Output:
 <img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/ae574a50-465a-4879-acd4-af8d3498e12c" />
 
-
+### Result:
+So, the basic movements translation,scaling and rotation of game objects through code are Executed Successfully.
 
 
 
